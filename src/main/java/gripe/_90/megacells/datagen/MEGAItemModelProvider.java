@@ -50,6 +50,8 @@ public class MEGAItemModelProvider extends ItemModelProvider {
                 MEGACellType.FLUID.getPortableCells().stream()).flatMap(s -> s).toList()) {
             portable(portable);
         }
+
+        flatSingleLayer(MEGAItems.GREATER_ENERGY_CARD.asItem());
     }
 
     private void cell(Item cell) {
